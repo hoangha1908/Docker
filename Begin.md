@@ -47,7 +47,7 @@ FROM centos:7
 CMD echo "Create Image Centos 7
 RUN yum -y install epel-release
 RUN yum -y update && yum clean all
-RUN yum -y vim wget net-tools git
+RUN yum -y install vim wget net-tools git
 RUN yum -y install nginx
 ADD index.html /var/www/html
 EXPOSE 80 
